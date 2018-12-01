@@ -18,10 +18,11 @@
 
 
 /* Import Basic Design Styles Used on All Screens */
-
+/* This imports this css which contains several graphics and typographical style rules. */
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* This code sets the body to have a display of flex and a flex flow of row wrap.  */
 body {
     display: flex;
     display: -webkit-flex;
@@ -29,11 +30,13 @@ body {
     flex-flow: row wrap;
 }
 
+/* This set of code sets the section that has an id of sheet to have a flex of 1 3 and 301 pixels. */
 section#sheet {
     -webkit-flex: 1 3 301px;
     flex: 1 3 301px;
 }
 
+/* This set of code sets the article to have a flex of 1 3 and 180 pixels. */
 article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
@@ -46,16 +49,19 @@ article {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+/* This sets a media query of mobile devices and gives it a max-width of 480 pixels. Then it sets the img with a class of panel to have a width of 100%. */
 @media only screen and (max-width: 480px) {
     img.panel {
         width: 100%;
     }
 
+    /* This set of code sets the nav with the class of horizontal to have a flex order of 99. */
     nav.horizontal {
         -webkit-order: 99;
         order: 99;
     }
 
+    /* This sets the footer thats a direct child of body to have a flex order of 100. */
     body>footer {
         -webkit-order: 100;
         order: 100;
@@ -66,6 +72,7 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+/* This sets a media query of tablets/desktop and gives it a min-width of 481 pixels. Then it sets the nav with a class of horizontal with a ul to have a display of flex, a flex flow of row nowrap and a height of 40 pixels.  */
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
         display: -webkit-flex;
@@ -75,23 +82,28 @@ article {
         height: 40px;
     }
 
+    /* This sets the nav that has a class of horizontal and li nested a ul to have a flex of 1 1 and auto. */
     nav.horizontal ul li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
     }
 
+    /* This set of code affects an image with a class of size1 to have a width of 100%. */
     img.size1 {
         width: 100%;
     }
 
+    /* This set of code affects an image with a class of size2 to have a width of 60%. */
     img.size2 {
         width: 60%;
     }
 
+    /* This set of code affects an image with a class of size3 to have a width of 40%. */
     img.size3 {
         width: 40%;
     }
 
+    /* This set of code affects an image with a class of size4 to have a width of 30%. */
     img.size4 {
         width: 30%;
     }

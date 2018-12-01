@@ -17,29 +17,35 @@
 
 
 /* Hidden Objects */
+/* This sets the nav, footer and article to have a display of none when you try to print it. */
 nav,
 footer,
 article {
         display: none;
 }
 
+/* This makes a section with an id of sheet to have a width of 6in and a margin of 0in and auto when you try to print it.  */
 section#sheet {
         width: 6in;
         margin: 0in auto;
 }
 
+/* This sets the class of size1 to have a width of 5in. */
 .size1 {
         width: 5in;
 }
 
+/* This sets the class of size2 to have a width of 3in. */
 .size2 {
         width: 3in;
 }
 
+/* This sets the class of size3 to have a width of 2in. */
 .size3 {
         width: 2in;
 }
 
+/* This sets the class of size4 to have a width of 1.5in. */
 .size4 {
         width: 1.5in;
 }
